@@ -1,0 +1,69 @@
+
+$color:#000;
+
+body {
+  background-color: $color;
+}
+
+$color:#fff;
+
+body {
+  background-color: $color;
+}
+/*------*/
+ul {
+  margin: 0;
+
+  a {
+    color: red;
+  }
+}
+/*-----*/
+
+@import"file";
+
+/*-----*/
+@mixin my-border ($thikness){
+  border-width: $thikness;
+}
+
+img {
+  @include my-border (10px);
+}
+
+/*-----*/
+.push_button {
+  background-color: blue;
+}
+
+.main_button {
+  @extend .push_button;
+  font-weight: bold;
+}
+/*-----*/
+$page-width: 1400px;
+$padding: 20px;
+
+.container {
+  padding: $padding;
+  width: $page-width - 2*$padding;
+}
+
+/*-----*/
+.sassy {
+  border: {
+    width: 10px;
+    color: red;
+    radius:5px;
+  }
+}
+
+/*-----*/
+.button {
+  background-color: green;
+  &:hover {
+    background-color: red;
+  }
+}
+
+/*-----*/
