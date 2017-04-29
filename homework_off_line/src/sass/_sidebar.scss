@@ -2,6 +2,44 @@
 .wrapper__sidebar {
   float:left;
   width: 20%;
-  outline: 1px solid red;
+  border-right: 2px solid #36bdb5;
+  border-bottom: 2px solid #36bdb5;
+
+  .sidebar {
+    margin: 10px 0 10px;
+
+    .sidebar__title {
+      @include gradient;
+      text-transform: uppercase;
+      font-family: $bebas;
+      font-size: 27px;
+      color:#fff;
+      font-weight: normal;
+      text-align: center;
+    }
+
+    .sidebar__items {
+      margin: 0 auto;
+      width: 50%;
+
+      h2 {
+        padding: 15px 0 7px;
+        font-size: 27px;
+      }
+
+      ul {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: #36bdb5;
+          line-height: 26px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
 }
- 

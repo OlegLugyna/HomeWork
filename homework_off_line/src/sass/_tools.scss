@@ -16,6 +16,12 @@ $color_titel: #afafaf;
             }
 }
 
+@mixin gradient {
+  background-image: -webkit-linear-gradient(#39c8b4, #36bdb5);
+  background-image: -o-linear-gradient(#39c8b4, #36bdb5);
+  background-image: linear-gradient(#39c8b4, #36bdb5);
+}
+
 h2,
 .inner__price {
   font-family: $bebas;

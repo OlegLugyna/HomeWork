@@ -11,13 +11,14 @@ footer {
 
   h2 {
     color: #fff;
+    margin-bottom: 20px;
   }
 
   section {
-    //padding-top: 20px;
     font-size: 15px;
     font-family: $opensans;
     color: #fff;
+    margin-bottom: 10px;
 
     .street {
       padding: 5px 0 5px;
@@ -29,7 +30,6 @@ footer {
   }
 
   .footer__posts {
-    padding-top: 20px;
     font-size: 15px;
     font-family: $opensans;
     color: #fff;
@@ -39,13 +39,13 @@ footer {
       font-size: 15px;
       padding: 5px 0 5px;
     }
+
+    div {
+      margin-bottom: 10px;
+    }
   }
 
   .footer__forms {
-
-    h2 {
-      padding-bottom: 20px;
-    }
 
     .form__input {
       margin-bottom: 10px;
@@ -77,19 +77,21 @@ footer {
 
       }
     }
-
-    }
-
-
-
-
+  }
 }
 
-
-
-
-
-
 .footer__leagal {
+  height: 45px;
   background-color: $color_legal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-family: $opensans;
+    font-size: 15px;
+    color:#fff;
+    font-weight: bold;
+
+  }
 }

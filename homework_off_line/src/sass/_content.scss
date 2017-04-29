@@ -59,9 +59,7 @@ main {
 }
 
 .products__caption {
-  background-image: -webkit-linear-gradient(#39c8b4, #36bdb5);
-  background-image: -o-linear-gradient(#39c8b4, #36bdb5);
-  background-image: linear-gradient(#39c8b4, #36bdb5);
+  @include gradient;
   text-transform: uppercase;
   font-family: $bebas;
   font-size: 31px;

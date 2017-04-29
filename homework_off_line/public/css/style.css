@@ -37,6 +37,8 @@ h2,
     font-size: 49px;
     font-family: "Lobster 1.4";
     color: #4ccfc1; }
+  .main__line .logo__link {
+    text-decoration: none; }
   .main__line .search__input {
     width: 437px;
     height: 31px;
@@ -65,6 +67,10 @@ h2,
       background-image: url(../img/sprits.png);
       background-position: -38px -1px;
       background-repeat: no-repeat; }
+      .main__line .total-price .basket a {
+        display: block;
+        width: 45px;
+        height: 40px; }
     .main__line .total-price .price {
       font-size: 33px;
       font-family: "Bebas Neue", "Ariel", sans-serif;
@@ -155,7 +161,34 @@ h2,
 .wrapper__sidebar {
   float: left;
   width: 20%;
-  outline: 1px solid red; }
+  border-right: 2px solid #36bdb5;
+  border-bottom: 2px solid #36bdb5; }
+  .wrapper__sidebar .sidebar {
+    margin: 10px 0 10px; }
+    .wrapper__sidebar .sidebar .sidebar__title {
+      background-image: -webkit-linear-gradient(#39c8b4, #36bdb5);
+      background-image: -o-linear-gradient(#39c8b4, #36bdb5);
+      background-image: linear-gradient(#39c8b4, #36bdb5);
+      text-transform: uppercase;
+      font-family: "Bebas Neue", "Ariel", sans-serif;
+      font-size: 27px;
+      color: #fff;
+      font-weight: normal;
+      text-align: center; }
+    .wrapper__sidebar .sidebar .sidebar__items {
+      margin: 0 auto;
+      width: 50%; }
+      .wrapper__sidebar .sidebar .sidebar__items h2 {
+        padding: 15px 0 7px;
+        font-size: 27px; }
+      .wrapper__sidebar .sidebar .sidebar__items ul {
+        list-style: none; }
+        .wrapper__sidebar .sidebar .sidebar__items ul a {
+          text-decoration: none;
+          color: #36bdb5;
+          line-height: 26px; }
+          .wrapper__sidebar .sidebar .sidebar__items ul a:hover {
+            text-decoration: underline; }
 
 main {
   width: 100%; }
@@ -283,17 +316,18 @@ footer {
   padding-top: 20px;
   margin: 0 auto; }
   footer h2 {
-    color: #fff; }
+    color: #fff;
+    margin-bottom: 20px; }
   footer section {
     font-size: 15px;
     font-family: "Open Sans", "Tahoma", sans-serif;
-    color: #fff; }
+    color: #fff;
+    margin-bottom: 10px; }
     footer section .street {
       padding: 5px 0 5px; }
     footer section .tlf {
       font-weight: bold; }
   footer .footer__posts {
-    padding-top: 20px;
     font-size: 15px;
     font-family: "Open Sans", "Tahoma", sans-serif;
     color: #fff; }
@@ -301,8 +335,8 @@ footer {
       font-weight: bold;
       font-size: 15px;
       padding: 5px 0 5px; }
-  footer .footer__forms h2 {
-    padding-bottom: 20px; }
+    footer .footer__posts div {
+      margin-bottom: 10px; }
   footer .footer__forms .form__input {
     margin-bottom: 10px; }
     footer .footer__forms .form__input input {
@@ -325,4 +359,13 @@ footer {
       color: #fff; }
 
 .footer__leagal {
-  background-color: #2da89b; }
+  height: 45px;
+  background-color: #2da89b;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer__leagal p {
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold; }

@@ -13,6 +13,10 @@
     color: $color_menu;
   }
 
+  .logo__link {
+      text-decoration: none;
+  }
+
   .search__input {
     width: 437px;
     height: 31px;
@@ -50,6 +54,12 @@
       background-image: url(../img/sprits.png);
       background-position: -38px -1px;
       background-repeat: no-repeat;
+
+      a {
+        display: block;
+        width: 45px;
+        height: 40px;
+      }
     }
 
     .price {
