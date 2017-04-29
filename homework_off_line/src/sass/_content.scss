@@ -1,0 +1,152 @@
+main {
+  @include clearfix;
+  width: 100%
+}
+
+.wrapper__content {
+  float: left;
+  width: 80%;
+  padding-bottom: 40px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+
+  figure {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 190px;
+
+    a {
+      display: block;
+      width: 185px;
+      height: 145px;
+    }
+
+    i {
+      width: 185px;
+      height: 145px;
+    }
+
+    button {
+      width: 60px;
+      margin-top: 20px;
+    }
+
+    .goods__img--shoes {
+      background-image: url(../img/brend_shoos.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .goods__img--tshirts {
+      background-image: url(../img/brand_tshirt.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .goods__img--shorts {
+      background-image: url(../img/brand_short.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.products__caption {
+  background-image: -webkit-linear-gradient(#39c8b4, #36bdb5);
+  background-image: -o-linear-gradient(#39c8b4, #36bdb5);
+  background-image: linear-gradient(#39c8b4, #36bdb5);
+  text-transform: uppercase;
+  font-family: $bebas;
+  font-size: 31px;
+  color:#fff;
+  font-weight: normal;
+}
+
+.content__container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+    height: 255px;
+    margin: 40px 20px 0;
+    border: 1px solid #e4e4e4;
+    border-bottom: 5px solid $primary_color;
+
+    a {
+      display: block;
+      width: 160px;
+      height: 145px;
+    }
+
+    i {
+      width: 160px;
+      height: 145px;
+      margin: 0 auto;
+    }
+
+    figcaption {
+      margin: 0 auto;
+    }
+
+    h2 {
+      margin-top: 20px
+    }
+
+    form {
+      margin-top: 5px;
+    }
+
+    .inner__price,
+    button  {
+      display: inline-block;
+    }
+
+    .inner__price {
+      height: 100%;
+      padding: 0 20px 0 0;
+      vertical-align: middle;
+    }
+
+    .inner__img--shoe {
+      background-image: url(../img/prod_shoos.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .inner__img--black-ts {
+      background-image: url(../img/brand_tshirt1.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .inner__img--white-ts {
+      background-image: url(../img/prod_tshirts.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .inner__img--purse {
+      background-image: url(../img/prod_purse.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .inner__img--bag {
+      background-image: url(../img/prod_bag.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .inner__img--short {
+      background-image: url(../img/brand_short.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}

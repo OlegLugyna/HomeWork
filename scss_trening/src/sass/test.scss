@@ -13,16 +13,19 @@ body {
 /*------*/
 ul {
   margin: 0;
-
   a {
     color: red;
   }
 }
-/*-----*/
+/*--import---*/
 
 @import"file";
 
-/*-----*/
+.class {
+  background-color: $color;
+}
+
+/*--mixin---*/
 @mixin my-border ($thikness){
   border-width: $thikness;
 }
@@ -31,7 +34,11 @@ img {
   @include my-border (10px);
 }
 
-/*-----*/
+.class {
+  @include my-border (25px);
+}
+
+/*---extend--*/
 .push_button {
   background-color: blue;
 }
@@ -67,3 +74,46 @@ $padding: 20px;
 }
 
 /*-----*/
+
+$selector:article;
+
+#{$selector} {
+  color:#f00;
+}
+
+/*-----*/
+$big-cat:cheetah;
+.#{$big-cat}-picture {
+  padding:3em;
+}
+$big-cat:puma;
+.#{$big-cat}-picture {
+  padding:3em;
+}
+$big-cat:jaguar;
+.#{$big-cat}-picture {
+  padding:3em;
+}
+$big-cat:tigar;
+.#{$big-cat}-picture {
+  padding:3em;
+}
+$big-cat:leopard;
+.#{$big-cat}-picture {
+  padding:3em;
+}
+/*------*/
+
+@each $big-cat in cheetah, puma, jaguar, panther, tigar,leopard  {
+  .#{$big-cat}-picture {
+    padding: 3em;
+  }
+
+}
+/*-------*/
+
+@each $header, $size in (h1: 2em, h2: 1,5em, h3: 1em) {
+  #{$header} {
+    font-size: $size;
+  }
+}

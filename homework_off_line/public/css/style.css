@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
+h2,
+.inner__price {
+  font-family: "Bebas Neue", "Ariel", sans-serif;
+  color: #afafaf;
+  font-size: 27px;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 25px; }
+
+.button {
+  width: 75px;
+  height: 35px;
+  background-color: #3cc395;
+  font-size: 20.19px;
+  font-family: "Bebas Neue", "Ariel", sans-serif;
+  color: #fff;
+  border: 0;
+  border-radius: 5px; }
+
+.main__line {
+  max-width: 985px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px; }
+  .main__line .logo {
+    font-size: 49px;
+    font-family: "Lobster 1.4";
+    color: #4ccfc1; }
+  .main__line .search__input {
+    width: 437px;
+    height: 31px;
+    z-index: 10; }
+  .main__line .search {
+    position: relative; }
+  .main__line .search__button {
+    background-color: #fff;
+    border: 0;
+    position: absolute;
+    right: 2px;
+    top: 1px; }
+    .main__line .search__button span {
+      display: block;
+      width: 32px;
+      height: 28px;
+      background-image: url(../img/sprits.png);
+      background-position: 0 -10px;
+      background-repeat: no-repeat; }
+  .main__line .total-price {
+    display: flex;
+    justify-content: space-between; }
+    .main__line .total-price .basket {
+      width: 45px;
+      height: 40px;
+      background-image: url(../img/sprits.png);
+      background-position: -38px -1px;
+      background-repeat: no-repeat; }
+    .main__line .total-price .price {
+      font-size: 33px;
+      font-family: "Bebas Neue", "Ariel", sans-serif;
+      color: #a1a1a1;
+      padding-top: 4px;
+      margin-left: 15px; }
+
+.menu {
+  background-color: #4ccfc1;
+  padding: 12px 0 12px; }
+  .menu ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 985px;
+    margin: 0 auto; }
+    .menu ul li {
+      list-style: none;
+      border-right: 2px solid #fff; }
+      .menu ul li:last-child {
+        border: 0; }
+      .menu ul li a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 21px;
+        font-family: "Bebas Neue", "Ariel", sans-serif;
+        display: block;
+        padding-right: 20px; }
+        .menu ul li a:hover {
+          text-decoration: underline; }
+
+.banner {
+  background-image: -webkit-linear-gradient(#39c8b4, #36bdb5);
+  background-image: -o-linear-gradient(#39c8b4, #36bdb5);
+  background-image: linear-gradient(#39c8b4, #36bdb5); }
+  .banner .banner__container {
+    display: flex;
+    justify-content: center; }
+    .banner .banner__container .banner__img {
+      padding: 68px 100px 0 0; }
+    .banner .banner__container .banner__content {
+      max-width: 400px;
+      padding-top: 82px; }
+      .banner .banner__container .banner__content h1 {
+        text-transform: uppercase;
+        font-size: 61px;
+        font-family: "Bebas Neue", "Ariel", sans-serif;
+        color: #fff;
+        font-weight: normal; }
+      .banner .banner__container .banner__content .banner__text {
+        font-family: "Open Sans", "Tahoma", sans-serif;
+        font-size: 17px;
+        margin-bottom: 30px; }
+      .banner .banner__container .banner__content button {
+        border: 2px solid #fff;
+        height: 40px;
+        width: 130px;
+        border-radius: 5px;
+        font-size: 27px;
+        font-family: "Bebas Neue", "Ariel", sans-serif;
+        font-weight: normal;
+        color: #fff;
+        background-image: -webkit-linear-gradient(#3bc0b4, #3bbeb2);
+        background-image: -o-linear-gradient(#3bc0b4, #3bbeb2);
+        background-image: linear-gradient(#3bc0b4, #3bbeb2); }
+
+.banner__control {
+  margin-bottom: 34px; }
+  .banner__control label {
+    display: block; }
+    .banner__control label::before {
+      display: block;
+      content: '';
+      border: 1px solid #3cc395;
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      background: #fff;
+      margin-right: 15px; }
+  .banner__control li {
+    display: inline-block;
+    list-style: none; }
+  .banner__control input {
+    visibility: hidden; }
+  .banner__control .radio__btm:checked ~ label:before {
+    background-color: #7ad8cb; }
+
+.wrapper__sidebar {
+  float: left;
+  width: 20%;
+  outline: 1px solid red; }
+
+main {
+  width: 100%; }
+  main:after {
+    display: block;
+    content: '';
+    clear: both;
+    visibility: hidden;
+    height: 0; }
+
+.wrapper__content {
+  float: left;
+  width: 80%;
+  padding-bottom: 40px; }
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto; }
+  .row figure {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 190px; }
+    .row figure a {
+      display: block;
+      width: 185px;
+      height: 145px; }
+    .row figure i {
+      width: 185px;
+      height: 145px; }
+    .row figure button {
+      width: 60px;
+      margin-top: 20px; }
+    .row figure .goods__img--shoes {
+      background-image: url(../img/brend_shoos.png);
+      background-position: center;
+      background-repeat: no-repeat; }
+    .row figure .goods__img--tshirts {
+      background-image: url(../img/brand_tshirt.png);
+      background-position: center;
+      background-repeat: no-repeat; }
+    .row figure .goods__img--shorts {
+      background-image: url(../img/brand_short.png);
+      background-position: center;
+      background-repeat: no-repeat; }
+
+.products__caption {
+  background-image: -webkit-linear-gradient(#39c8b4, #36bdb5);
+  background-image: -o-linear-gradient(#39c8b4, #36bdb5);
+  background-image: linear-gradient(#39c8b4, #36bdb5);
+  text-transform: uppercase;
+  font-family: "Bebas Neue", "Ariel", sans-serif;
+  font-size: 31px;
+  color: #fff;
+  font-weight: normal; }
+
+.content__container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .content__container figure {
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+    height: 255px;
+    margin: 40px 20px 0;
+    border: 1px solid #e4e4e4;
+    border-bottom: 5px solid #3cc395; }
+    .content__container figure a {
+      display: block;
+      width: 160px;
+      height: 145px; }
+    .content__container figure i {
+      width: 160px;
+      height: 145px;
+      margin: 0 auto; }
+    .content__container figure figcaption {
+      margin: 0 auto; }
+    .content__container figure h2 {
+      margin-top: 20px; }
+    .content__container figure form {
+      margin-top: 5px; }
+    .content__container figure .inner__price,
+    .content__container figure button {
+      display: inline-block; }
+    .content__container figure .inner__price {
+      height: 100%;
+      padding: 0 20px 0 0;
+      vertical-align: middle; }
+    .content__container figure .inner__img--shoe {
+      background-image: url(../img/prod_shoos.png);
+      background-position: center;
+      background-repeat: no-repeat; }
+    .content__container figure .inner__img--black-ts {
+      background-image: url(../img/brand_tshirt1.png);
+      background-position: center;
+      background-repeat: no-repeat; }
+    .content__container figure .inner__img--white-ts {
+      background-image: url(../img/prod_tshirts.png);
+      background-position: center;
+      background-repeat: no-repeat; }
+    .content__container figure .inner__img--purse {
+      background-image: url(../img/prod_purse.png);
+      background-position: center;
+      background-repeat: no-repeat; }
+    .content__container figure .inner__img--bag {
+      background-image: url(../img/prod_bag.png);
+      background-position: center;
+      background-repeat: no-repeat; }
+    .content__container figure .inner__img--short {
+      background-image: url(../img/brand_short.png);
+      background-position: center;
+      background-repeat: no-repeat; }
+
+.wrapper__footer {
+  background-color: #3cc395; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding-top: 20px;
+  margin: 0 auto; }
+  footer h2 {
+    color: #fff; }
+  footer section {
+    font-size: 15px;
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    color: #fff; }
+    footer section .street {
+      padding: 5px 0 5px; }
+    footer section .tlf {
+      font-weight: bold; }
+  footer .footer__posts {
+    padding-top: 20px;
+    font-size: 15px;
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    color: #fff; }
+    footer .footer__posts .posts__caption {
+      font-weight: bold;
+      font-size: 15px;
+      padding: 5px 0 5px; }
+  footer .footer__forms h2 {
+    padding-bottom: 20px; }
+  footer .footer__forms .form__input {
+    margin-bottom: 10px; }
+    footer .footer__forms .form__input input {
+      border-radius: 2px; }
+      footer .footer__forms .form__input input:focus {
+        border: 2px solid #2da89b;
+        outline: none;
+        box-shadow: inset 0, 0, 20px rgba 0, 0, 0, 0.5; }
+  footer .footer__forms .button--footer {
+    margin-top: 20px; }
+    footer .footer__forms .button--footer input {
+      background-color: #3cc395;
+      border: 2px solid #fff;
+      width: 75px;
+      height: 35px;
+      border-radius: 5px;
+      font-size: 17px;
+      font-family: "Bebas Neue", "Ariel", sans-serif;
+      font-weight: normal;
+      color: #fff; }
+
+.footer__leagal {
+  background-color: #2da89b; }

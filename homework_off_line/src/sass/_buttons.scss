@@ -1,0 +1,30 @@
+.banner__control {
+  margin-bottom: 34px;
+  label {
+    display: block;
+
+    &::before {
+      display: block;
+      content: '';
+      border: 1px solid $primary_color;
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      background: #fff;
+      margin-right: 15px;
+    }
+  }
+
+  li {
+    display: inline-block;
+    list-style: none;
+  }
+
+  input {
+    visibility: hidden;
+  }
+
+  .radio__btm:checked ~label:before {
+    background-color: #7ad8cb;
+  }
+}

@@ -1,0 +1,38 @@
+$lobster: 'Lobster 1.4';
+$bebas: 'Bebas Neue', 'Ariel', sans-serif;
+$opensans: 'Open Sans', 'Tahoma',sans-serif;
+$color_menu: #4ccfc1;
+$primary_color: #3cc395;
+$color_legal: #2da89b;
+$color_titel: #afafaf;
+
+@mixin clearfix {
+            &:after {
+              display: block;
+              content: '';
+              clear: both;
+              visibility: hidden;
+              height: 0;
+            }
+}
+
+h2,
+.inner__price {
+  font-family: $bebas;
+  color: $color_titel;
+  font-size: 27px;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+.button {
+  width: 75px;
+  height: 35px;
+  background-color:$primary_color;
+  font-size: 20.19px;
+  font-family: $bebas;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+}

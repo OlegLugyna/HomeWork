@@ -1,0 +1,48 @@
+// banner
+.banner {
+  background-image: -webkit-linear-gradient(#39c8b4, #36bdb5);
+  background-image: -o-linear-gradient(#39c8b4, #36bdb5);
+  background-image: linear-gradient(#39c8b4, #36bdb5);
+
+  .banner__container {
+    display: flex;
+    justify-content: center;
+
+    .banner__img {
+      padding: 68px 100px 0 0;
+    }
+
+    .banner__content {
+      max-width: 400px;
+      padding-top: 82px;
+
+      h1 {
+        text-transform: uppercase;
+        font-size: 61px;
+        font-family: $bebas;
+        color: #fff;
+        font-weight: normal;
+      }
+
+      .banner__text {
+        font-family: $opensans;
+        font-size: 17px;
+        margin-bottom: 30px;
+      }
+
+      button {
+        border: 2px solid #fff;
+        height: 40px;
+        width: 130px;
+        border-radius: 5px;
+        font-size: 27px;
+        font-family: $bebas;
+        font-weight: normal;
+        color:#fff;
+        background-image: -webkit-linear-gradient(#3bc0b4, #3bbeb2);
+        background-image: -o-linear-gradient(#3bc0b4, #3bbeb2);
+        background-image: linear-gradient(#3bc0b4, #3bbeb2);
+      }
+    }
+  }
+}

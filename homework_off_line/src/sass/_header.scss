@@ -1,0 +1,98 @@
+// header
+.main__line {
+  max-width: 985px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+
+  .logo {
+    font-size: 49px;
+    font-family: $lobster;
+    color: $color_menu;
+  }
+
+  .search__input {
+    width: 437px;
+    height: 31px;
+    z-index: 10;
+  }
+
+  .search {
+    position: relative;
+  }
+
+  .search__button {
+    background-color: #fff;
+    border: 0;
+    position: absolute;
+    right: 2px;
+    top: 1px;
+
+    span {
+      display: block;
+      width: 32px;
+      height: 28px;
+      background-image: url(../img/sprits.png);
+      background-position: 0 -10px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .total-price {
+    display: flex;
+    justify-content: space-between;
+
+    .basket {
+      width: 45px;
+      height: 40px;
+      background-image: url(../img/sprits.png);
+      background-position: -38px -1px;
+      background-repeat: no-repeat;
+    }
+
+    .price {
+      font-size: 33px;
+      font-family: $bebas;
+      color: #a1a1a1;
+      padding-top: 4px;
+      margin-left: 15px;
+    }
+  }
+}
+
+.menu {
+  background-color: $color_menu;
+  padding: 12px 0 12px;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 985px;
+    margin: 0 auto;
+
+    li {
+      list-style: none;
+      border-right: 2px solid #fff;
+
+      &:last-child {
+        border: 0;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 21px;
+        font-family: $bebas;
+        display: block;
+        padding-right: 20px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
