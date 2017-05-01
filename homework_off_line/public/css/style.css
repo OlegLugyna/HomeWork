@@ -313,7 +313,7 @@ footer {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
-  padding-top: 20px;
+  padding: 20px 0 20px;
   margin: 0 auto; }
   footer h2 {
     color: #fff;
@@ -323,10 +323,19 @@ footer {
     font-family: "Open Sans", "Tahoma", sans-serif;
     color: #fff;
     margin-bottom: 10px; }
-    footer section .street {
-      padding: 5px 0 5px; }
     footer section .tlf {
       font-weight: bold; }
+  footer .footer__social ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; }
+    footer .footer__social ul .social__link {
+      fill: #fff;
+      width: 20px;
+      height: 20px; }
+      footer .footer__social ul .social__link a {
+        width: 20px;
+        height: 20px; }
   footer .footer__posts {
     font-size: 15px;
     font-family: "Open Sans", "Tahoma", sans-serif;
@@ -334,7 +343,7 @@ footer {
     footer .footer__posts .posts__caption {
       font-weight: bold;
       font-size: 15px;
-      padding: 5px 0 5px; }
+      padding: 0 0 5px; }
     footer .footer__posts div {
       margin-bottom: 10px; }
   footer .footer__forms .form__input {

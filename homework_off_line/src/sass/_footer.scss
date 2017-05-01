@@ -1,3 +1,4 @@
+//footer
 .wrapper__footer {
   background-color: $primary_color;
 }
@@ -6,7 +7,7 @@ footer {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
-  padding-top: 20px;
+  padding: 20px 0 20px;
   margin: 0 auto;
 
   h2 {
@@ -20,12 +21,29 @@ footer {
     color: #fff;
     margin-bottom: 10px;
 
-    .street {
-      padding: 5px 0 5px;
-    }
 
     .tlf {
       font-weight: bold;
+    }
+  }
+
+  .footer__social {
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+
+      .social__link {
+        fill: #fff;
+        width: 20px;
+        height: 20px;
+
+        a {
+          width: 20px;
+          height: 20px;
+        }
+      }
     }
   }
 
@@ -37,7 +55,7 @@ footer {
     .posts__caption {
       font-weight: bold;
       font-size: 15px;
-      padding: 5px 0 5px;
+      padding: 0 0 5px;
     }
 
     div {
