@@ -6,13 +6,13 @@
   border-bottom: 2px solid #36bdb5;
 
   .sidebar {
-    margin: 10px 0 10px;
+    margin: 0.625rem 0 0.625rem;
 
     .sidebar__title {
       @include gradient;
       text-transform: uppercase;
       font-family: $bebas;
-      font-size: 27px;
+      font-size: 1.6875rem;
       color:#fff;
       font-weight: normal;
       text-align: center;
@@ -23,8 +23,8 @@
       width: 50%;
 
       h2 {
-        padding: 15px 0 7px;
-        font-size: 27px;
+        padding: 0.9375rem 0 0.4375rem;
+        font-size: 1.6875rem;
       }
 
       ul {
@@ -33,7 +33,7 @@
         a {
           text-decoration: none;
           color: #36bdb5;
-          line-height: 26px;
+          line-height: 1.625rem;
 
           &:hover {
             text-decoration: underline;

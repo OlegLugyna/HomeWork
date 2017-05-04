@@ -1,14 +1,14 @@
 // header
 .main__line {
-  max-width: 985px;
+  max-width: 75%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 15px;
+  padding-bottom: 0.9375rem;
 
   .logo {
-    font-size: 49px;
+    font-size: 3.0625rem;
     font-family: $lobster;
     color: $color_menu;
   }
@@ -17,36 +17,42 @@
       text-decoration: none;
   }
 
-  .search__input {
-    width: 437px;
-    height: 31px;
-    z-index: 10;
-  }
-
   .search {
     position: relative;
-  }
+    width: 45%;
+    height: 40px;
+    margin-top: 1.25rem;
 
-  .search__button {
-    background-color: #fff;
-    border: 0;
-    position: absolute;
-    right: 2px;
-    top: 1px;
+    .search__input {
+      width: 100%;
+      height: 31px;
+      z-index: 10;
+      border: 1px solid #d3d3d3;
+    }
 
-    span {
-      display: block;
-      width: 32px;
-      height: 28px;
-      background-image: url(../img/sprits.png);
-      background-position: 0 -10px;
-      background-repeat: no-repeat;
+    .search__button {
+      background-color: #fff;
+      border: 0;
+      position: absolute;
+      right: 2px;
+      top: 1px;
+
+      span {
+        display: block;
+        width: 32px;
+        height: 28px;
+        background-image: url(../img/sprits.png);
+        background-position: 0 -10px;
+        background-repeat: no-repeat;
+      }
     }
   }
 
   .total-price {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    width: 5%;
+    margin-top: 0.75rem;
 
     .basket {
       width: 45px;
@@ -54,6 +60,7 @@
       background-image: url(../img/sprits.png);
       background-position: -38px -1px;
       background-repeat: no-repeat;
+      background-size: cover;
 
       a {
         display: block;
@@ -63,23 +70,24 @@
     }
 
     .price {
-      font-size: 33px;
+      font-size: 2.0625rem;
       font-family: $bebas;
       color: #a1a1a1;
-      padding-top: 4px;
-      margin-left: 15px;
+      padding-top: 0.25rem;
+      margin-left: 0.5rem;
     }
   }
 }
 
 .menu {
   background-color: $color_menu;
-  padding: 12px 0 12px;
+  padding: 0.75rem 0 0.75rem;
+  width: 100%;
 
   ul {
     display: flex;
     justify-content: space-between;
-    max-width: 985px;
+    max-width: 75%;
     margin: 0 auto;
 
     li {
@@ -90,14 +98,18 @@
         border: 0;
       }
 
+      &:last-child a {
+        padding-right: 0;
+      }
+
       a {
         color: #fff;
         text-decoration: none;
         text-transform: uppercase;
-        font-size: 21px;
+        font-size: 1.3rem;
         font-family: $bebas;
         display: block;
-        padding-right: 20px;
+        padding-right: 1.25rem;
 
         &:hover {
           text-decoration: underline;

@@ -11,94 +11,104 @@ h2,
 .inner__price {
   font-family: "Bebas Neue", "Ariel", sans-serif;
   color: #afafaf;
-  font-size: 27px;
+  font-size: 1.6875rem;
   text-transform: uppercase;
   font-weight: normal;
-  line-height: 25px; }
+  line-height: 1.5625rem; }
 
 .button {
   width: 75px;
   height: 35px;
   background-color: #3cc395;
-  font-size: 20.19px;
+  font-size: 1.26rem;
   font-family: "Bebas Neue", "Ariel", sans-serif;
   color: #fff;
   border: 0;
   border-radius: 5px; }
 
 .main__line {
-  max-width: 985px;
+  max-width: 75%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 15px; }
+  padding-bottom: 0.9375rem; }
   .main__line .logo {
-    font-size: 49px;
+    font-size: 3.0625rem;
     font-family: "Lobster 1.4";
     color: #4ccfc1; }
   .main__line .logo__link {
     text-decoration: none; }
-  .main__line .search__input {
-    width: 437px;
-    height: 31px;
-    z-index: 10; }
   .main__line .search {
-    position: relative; }
-  .main__line .search__button {
-    background-color: #fff;
-    border: 0;
-    position: absolute;
-    right: 2px;
-    top: 1px; }
-    .main__line .search__button span {
-      display: block;
-      width: 32px;
-      height: 28px;
-      background-image: url(../img/sprits.png);
-      background-position: 0 -10px;
-      background-repeat: no-repeat; }
+    position: relative;
+    width: 45%;
+    height: 40px;
+    margin-top: 1.25rem; }
+    .main__line .search .search__input {
+      width: 100%;
+      height: 31px;
+      z-index: 10;
+      border: 1px solid #d3d3d3; }
+    .main__line .search .search__button {
+      background-color: #fff;
+      border: 0;
+      position: absolute;
+      right: 2px;
+      top: 1px; }
+      .main__line .search .search__button span {
+        display: block;
+        width: 32px;
+        height: 28px;
+        background-image: url(../img/sprits.png);
+        background-position: 0 -10px;
+        background-repeat: no-repeat; }
   .main__line .total-price {
     display: flex;
-    justify-content: space-between; }
+    justify-content: flex-end;
+    width: 5%;
+    margin-top: 0.75rem; }
     .main__line .total-price .basket {
       width: 45px;
       height: 40px;
       background-image: url(../img/sprits.png);
       background-position: -38px -1px;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      background-size: cover; }
       .main__line .total-price .basket a {
         display: block;
         width: 45px;
         height: 40px; }
     .main__line .total-price .price {
-      font-size: 33px;
+      font-size: 2.0625rem;
       font-family: "Bebas Neue", "Ariel", sans-serif;
       color: #a1a1a1;
-      padding-top: 4px;
-      margin-left: 15px; }
+      padding-top: 0.25rem;
+      margin-left: 0.5rem; }
 
 .menu {
   background-color: #4ccfc1;
-  padding: 12px 0 12px; }
+  padding: 0.75rem 0 0.75rem;
+  width: 100%; }
   .menu ul {
     display: flex;
     justify-content: space-between;
-    max-width: 985px;
+    max-width: 75%;
     margin: 0 auto; }
     .menu ul li {
       list-style: none;
       border-right: 2px solid #fff; }
       .menu ul li:last-child {
         border: 0; }
+      .menu ul li:last-child a {
+        padding-right: 0; }
       .menu ul li a {
         color: #fff;
         text-decoration: none;
         text-transform: uppercase;
-        font-size: 21px;
+        font-size: 1.3rem;
         font-family: "Bebas Neue", "Ariel", sans-serif;
         display: block;
-        padding-right: 20px; }
+        padding-right: 1.25rem; }
         .menu ul li a:hover {
           text-decoration: underline; }
 
@@ -110,32 +120,32 @@ h2,
     display: flex;
     justify-content: center; }
     .banner .banner__container .banner__img {
-      padding: 68px 100px 0 0; }
+      padding: 4.25rem 6.25rem 0 0; }
     .banner .banner__container .banner__content {
-      max-width: 400px;
-      padding-top: 82px; }
+      max-width: 30%;
+      padding-top: 5.125rem; }
       .banner .banner__container .banner__content h1 {
         text-transform: uppercase;
-        font-size: 61px;
+        font-size: 3.8125rem;
         font-family: "Bebas Neue", "Ariel", sans-serif;
         color: #fff;
         font-weight: normal; }
       .banner .banner__container .banner__content .banner__text {
         font-family: "Open Sans", "Tahoma", sans-serif;
-        font-size: 17px;
-        margin-bottom: 30px; }
+        font-size: 1.0625rem;
+        margin-bottom: 1.875rem; }
       .banner .banner__container .banner__content button {
         border: 2px solid #fff;
         height: 40px;
         width: 130px;
         border-radius: 5px;
-        font-size: 27px;
+        font-size: 1.6825rem;
         font-family: "Bebas Neue", "Ariel", sans-serif;
         font-weight: normal;
         color: #fff;
-        background-image: -webkit-linear-gradient(#3bc0b4, #3bbeb2);
-        background-image: -o-linear-gradient(#3bc0b4, #3bbeb2);
-        background-image: linear-gradient(#3bc0b4, #3bbeb2); }
+        background-image: -webkit-linear-gradient(#39c8b4, #36bdb5);
+        background-image: -o-linear-gradient(#39c8b4, #36bdb5);
+        background-image: linear-gradient(#39c8b4, #36bdb5); }
 
 .banner__control {
   margin-bottom: 34px; }
@@ -149,7 +159,7 @@ h2,
       width: 12px;
       border-radius: 50%;
       background: #fff;
-      margin-right: 15px; }
+      margin-right: 0.9375rem; }
   .banner__control li {
     display: inline-block;
     list-style: none; }
@@ -164,14 +174,14 @@ h2,
   border-right: 2px solid #36bdb5;
   border-bottom: 2px solid #36bdb5; }
   .wrapper__sidebar .sidebar {
-    margin: 10px 0 10px; }
+    margin: 0.625rem 0 0.625rem; }
     .wrapper__sidebar .sidebar .sidebar__title {
       background-image: -webkit-linear-gradient(#39c8b4, #36bdb5);
       background-image: -o-linear-gradient(#39c8b4, #36bdb5);
       background-image: linear-gradient(#39c8b4, #36bdb5);
       text-transform: uppercase;
       font-family: "Bebas Neue", "Ariel", sans-serif;
-      font-size: 27px;
+      font-size: 1.6875rem;
       color: #fff;
       font-weight: normal;
       text-align: center; }
@@ -179,14 +189,14 @@ h2,
       margin: 0 auto;
       width: 50%; }
       .wrapper__sidebar .sidebar .sidebar__items h2 {
-        padding: 15px 0 7px;
-        font-size: 27px; }
+        padding: 0.9375rem 0 0.4375rem;
+        font-size: 1.6875rem; }
       .wrapper__sidebar .sidebar .sidebar__items ul {
         list-style: none; }
         .wrapper__sidebar .sidebar .sidebar__items ul a {
           text-decoration: none;
           color: #36bdb5;
-          line-height: 26px; }
+          line-height: 1.625rem; }
           .wrapper__sidebar .sidebar .sidebar__items ul a:hover {
             text-decoration: underline; }
 
@@ -202,29 +212,30 @@ main {
 .wrapper__content {
   float: left;
   width: 80%;
-  padding-bottom: 40px; }
+  padding-bottom: 2.5rem; }
 
 .row {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 100%;
   margin: 0 auto; }
   .row figure {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 300px;
-    height: 190px; }
+    width: 18.75rem;
+    height: 11.875rem; }
     .row figure a {
       display: block;
-      width: 185px;
-      height: 145px; }
+      width: 11.5625rem;
+      height: 9.0625rem; }
     .row figure i {
-      width: 185px;
-      height: 145px; }
+      width: 11.5625rem;
+      height: 9.0625rem; }
     .row figure button {
-      width: 60px;
-      margin-top: 20px; }
+      width: 3.75rem;
+      margin-top: 1.2rem; }
     .row figure .goods__img--shoes {
       background-image: url(../img/brend_shoos.png);
       background-position: center;
@@ -244,7 +255,7 @@ main {
   background-image: linear-gradient(#39c8b4, #36bdb5);
   text-transform: uppercase;
   font-family: "Bebas Neue", "Ariel", sans-serif;
-  font-size: 31px;
+  font-size: 1.9375rem;
   color: #fff;
   font-weight: normal; }
 
@@ -255,31 +266,31 @@ main {
   .content__container figure {
     display: flex;
     flex-direction: column;
-    width: 255px;
-    height: 255px;
-    margin: 40px 20px 0;
+    width: 15.9375rem;
+    height: 15.9375rem;
+    margin: 2.5rem 1.25rem 0;
     border: 1px solid #e4e4e4;
     border-bottom: 5px solid #3cc395; }
     .content__container figure a {
       display: block;
-      width: 160px;
-      height: 145px; }
+      width: 15.9375rem;
+      height: 9.0625rem; }
     .content__container figure i {
-      width: 160px;
-      height: 145px;
+      width: 15.9375rem;
+      height: 9.0625rem;
       margin: 0 auto; }
     .content__container figure figcaption {
       margin: 0 auto; }
     .content__container figure h2 {
-      margin-top: 20px; }
+      margin-top: 1.25rem; }
     .content__container figure form {
-      margin-top: 5px; }
+      margin-top: 0.3125rem; }
     .content__container figure .inner__price,
     .content__container figure button {
       display: inline-block; }
     .content__container figure .inner__price {
       height: 100%;
-      padding: 0 20px 0 0;
+      padding: 0 1.25rem 0 0;
       vertical-align: middle; }
     .content__container figure .inner__img--shoe {
       background-image: url(../img/prod_shoos.png);
@@ -312,17 +323,17 @@ main {
 footer {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
-  padding: 20px 0 20px;
+  max-width: 85%;
+  padding: 1.25rem 0 1.25rem;
   margin: 0 auto; }
   footer h2 {
     color: #fff;
-    margin-bottom: 20px; }
+    margin-bottom: 1.25rem; }
   footer section {
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-family: "Open Sans", "Tahoma", sans-serif;
     color: #fff;
-    margin-bottom: 10px; }
+    margin-bottom: 0.625rem; }
     footer section .tlf {
       font-weight: bold; }
   footer .footer__social ul {
@@ -337,32 +348,32 @@ footer {
         width: 20px;
         height: 20px; }
   footer .footer__posts {
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-family: "Open Sans", "Tahoma", sans-serif;
     color: #fff; }
     footer .footer__posts .posts__caption {
       font-weight: bold;
-      font-size: 15px;
-      padding: 0 0 5px; }
+      font-size: 0.9375rem;
+      padding: 0 0 0.3125rem; }
     footer .footer__posts div {
-      margin-bottom: 10px; }
+      margin-bottom: 0.625rem; }
   footer .footer__forms .form__input {
-    margin-bottom: 10px; }
+    margin-bottom: 0.625rem; }
     footer .footer__forms .form__input input {
       border-radius: 2px; }
       footer .footer__forms .form__input input:focus {
         border: 2px solid #2da89b;
         outline: none;
-        box-shadow: inset 0, 0, 20px rgba 0, 0, 0, 0.5; }
+        box-shadow: inset 0, 0, 1.25rem rgba 0, 0, 0, 0.5; }
   footer .footer__forms .button--footer {
-    margin-top: 20px; }
+    margin-top: 1.25rem; }
     footer .footer__forms .button--footer input {
       background-color: #3cc395;
       border: 2px solid #fff;
       width: 75px;
       height: 35px;
       border-radius: 5px;
-      font-size: 17px;
+      font-size: 1.0625rem;
       font-family: "Bebas Neue", "Ariel", sans-serif;
       font-weight: normal;
       color: #fff; }
@@ -375,6 +386,6 @@ footer {
   align-items: center; }
   .footer__leagal p {
     font-family: "Open Sans", "Tahoma", sans-serif;
-    font-size: 15px;
+    font-size: 0.9375rem;
     color: #fff;
     font-weight: bold; }

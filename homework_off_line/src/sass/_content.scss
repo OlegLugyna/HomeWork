@@ -6,12 +6,13 @@ main {
 .wrapper__content {
   float: left;
   width: 80%;
-  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
 }
 
 .row {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 100%;
   margin: 0 auto;
 
@@ -19,23 +20,23 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 300px;
-    height: 190px;
+    width: 18.75rem;
+    height: 11.875rem;
 
     a {
       display: block;
-      width: 185px;
-      height: 145px;
+      width: 11.5625rem;
+      height: 9.0625rem;
     }
 
     i {
-      width: 185px;
-      height: 145px;
+      width: 11.5625rem;
+      height: 9.0625rem;
     }
 
     button {
-      width: 60px;
-      margin-top: 20px;
+      width: 3.75rem;
+      margin-top: 1.2rem;
     }
 
     .goods__img--shoes {
@@ -62,7 +63,7 @@ main {
   @include gradient;
   text-transform: uppercase;
   font-family: $bebas;
-  font-size: 31px;
+  font-size: 1.9375rem;
   color:#fff;
   font-weight: normal;
 }
@@ -75,21 +76,21 @@ main {
   figure {
     display: flex;
     flex-direction: column;
-    width: 255px;
-    height: 255px;
-    margin: 40px 20px 0;
+    width: 15.9375rem;
+    height: 15.9375rem;
+    margin: 2.5rem 1.25rem 0;
     border: 1px solid #e4e4e4;
     border-bottom: 5px solid $primary_color;
 
     a {
       display: block;
-      width: 160px;
-      height: 145px;
+      width: 15.9375rem;
+      height: 9.0625rem;
     }
 
     i {
-      width: 160px;
-      height: 145px;
+      width: 15.9375rem;
+      height: 9.0625rem;
       margin: 0 auto;
     }
 
@@ -98,11 +99,11 @@ main {
     }
 
     h2 {
-      margin-top: 20px
+      margin-top: 1.25rem;
     }
 
     form {
-      margin-top: 5px;
+      margin-top: 0.3125rem;
     }
 
     .inner__price,
@@ -112,7 +113,7 @@ main {
 
     .inner__price {
       height: 100%;
-      padding: 0 20px 0 0;
+      padding: 0 1.25rem 0 0;
       vertical-align: middle;
     }
 
