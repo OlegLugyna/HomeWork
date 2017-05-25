@@ -15,7 +15,7 @@
   alert (result);
 })();*/
 
-
+/*
 (function () {
   'use strict'
 
@@ -31,6 +31,7 @@
   var result = reverseString(str);
   alert (result);
 }) ();
+*/
 
 
 /*(function () {
