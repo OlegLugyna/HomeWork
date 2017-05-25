@@ -4,62 +4,41 @@
 }
 
 body {
-  margin-top: 10rem;
+  margin: 2rem 0;;
 }
 
-.minutes,
-.hours,
-.seconds {
-  width: 50px;
-  height: 50px;
-  font-size: 3.5rem;
-  line-height: 0.9;
+h2 {
+  width: 40%;
+  text-align: center;
+  font-size: 3rem;
+  margin: 3rem auto 1rem;
 }
 
-
-.milli_seconds {
-  width: 200px;
-  height: 30px;
-  margin: 0 auto;
-  text-align: right;
-  font-size: 1.5rem;
-  vertical-align: middle;
-  align-self: center;
-}
-
-.colon {
+p {
+  width: 460px;
+  height: 90px;
   font-size: 5rem;
-  height: 50px;
-  width: 20px;
-  line-height: 0.4;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  width: 250px;
-  height: 55px;
+  border-radius: 30px;
   border: 3px solid black;
   margin: 0 auto;
-  padding-top:5px;
-  border-radius: 30px;
+  text-align: center;
 }
 
-.container__button {
-  width: 50%;
+.button__container {
+  width: 40%;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
 }
 
-.button {
+button {
   height: 40px;
   width: 80px;
   border-radius: 20px;
-  margin:0 10px 0 10px;
+  margin:0 auto;
   border: 2px solid black;
 }
 
-.button:hover {
+button:hover {
   cursor: pointer;
 }
