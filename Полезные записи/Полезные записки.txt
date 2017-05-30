@@ -1,0 +1,226 @@
+ИНСТРУКЦИЯ ПО ЛАЙФ-РЕЛОАД ДЛЯ ВИНДЫ
+
+browser-sync start --server --files **/*.*
+
+ Ребята, инструкция как сделать лайв-релоад вашей верстки. (для пользователей Windows, у кого мак/линукс - пишите, сделаю отдельно)
+
+
+1) скачиваем и устанавливаем https://git-scm.com (на всякий случай, видео: https://www.youtube.com/watch?v=rWboGsc6CqI)
+
+
+2) скачиваем и устанавливаем https://nodejs.org/en/
+
+
+3) открываем программу Git Bash (то, что вы установили первым). Не пугайтесь, это консоль, вам теперь с ней работать частенько придется))
+
+
+4) проверяем, что нода установилась, в консоли вводим `node -v`
+
+
+5) если все ок вводим `npm install -g browser-sync`
+
+Что мы только что сделали:
+
+Установили нормальную консоль на винду :slightly_smiling_face:
+
+Поставили ноду - это окружение для исполнения javascript кода
+
+командой `npm install` поставили пакет browser-sync, который делает магию
+
+Теперь:
+
+заходим в папку проекта (там, где лежит index.html)
+
+кликаем по папке правой кнопкой мыши и выбираем git bash here
+
+в консоли вводим команду `browser-sync start --server --files **/*.*` - вуаля, ваша верстка у вас в браузере, и обновляется при сохранении исходников) 
+
+https://www.youtube.com/watch?v=mvntgMuUPhU
+
+ПЛАГИНЫ ДЛЯ АТОМА
+
+И так, по плагинам:
+
+
+emmet - штука, которая очень ускоряет написание html. превращает, например, `div.wrapper` в `<div class="wrapper"></div>` по нажатию Tab
+
+*
+linter* - позволяет проверять код на ошибки и соответствие стилю по мере ввода. Для него нужно ставить конкретные линтеры под каждый язык
+
+*
+linter-js-standard* - для javascript, style в настройках - semistandard
+
+*
+linter-sass-lint* - линтер sass/scss
+
+*
+linter-csslint* - для css
+
+*
+linter-htmlhint* - ну вы поняли)
+
+*
+nice-index* - меняет имя вкладки на имя родительской папки, если открыт файл index.whetever
+
+*
+pigments* - подсвечивает цвета
+
+*
+autocomplete-modules* - автодополнение для require/import
+
+СЕРИЯ ВИДЕОУРОКОВ ДЛЯ ГИТ ХАБ
+
+https://habrahabr.ru/post/322424/
+
+
+
+EMMET ВОЗМОЖНОСТИ И КОМБИНАЦИИ КЛАВИШ
+
+http://docs.emmet.io/cheat-sheet/
+
+ЗНАЧЕНИЯ ОСНОВНЫХ ТЕГОВ 
+
+http://html5doctor.com/
+
+КОД CSS ДЛЯ ПРИБИВАНИЯ ФУТТЕРА К НИЖНЕЙ ЧАСТИ
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  display: table;
+
+
+  height: 100%;
+}
+.content {
+  display: table-row;
+  height: 100%;
+}
+
+РАСПОРКА ДЛЯ СХЛОПЫВАЮЩЕГОСЯ РОДИТЕЛЬСКОГО БЛОКА ПРИ ИСПОЛЬЗОВАНИИ FLOAT
+
+.selector(parent)::after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+Еще обна распорка для text-align:justify;
+<div class="prevNext">
+    <a class="prev" href="#">Previous Article</a>
+    <a class="next" href="#">Next Article</a>
+</div>
+
+<style>
+body {
+    margin: 8px;
+}
+
+.prevNext {
+    text-align: justify;
+    border: 1px solid #ccc;
+}
+
+.prevNext a {
+    display: inline-block;
+}
+
+.prevNext:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+</style>
+
+http://jsbin.com/xesaqenayo/edit?html,css,output меню ссылка
+
+%reset-generic { 
+margin: 0;    
+padding: 0; 
+}  // этот пожно использовать на p, h1, и куче ррочих, гне нужно обнулить 								только марджины и паддинги    
+
+
+%reset-button { 		// для <button>    
+background: none;    
+padding: 0;    
+margin: 0;    
+border: none;    
+outline: none; 
+} 
+
+%reset-link { // для <a>    
+color: inherit;    
+text-decoration: inherit; 
+} 
+
+%reset-input { // для <input>    
+border: none;    
+padding: 0;    
+margin: 0;    
+outline: none; } 
+
+%reset-list { // для <ul>    
+list-style: none;    
+margin: 0;    
+padding: 0; 
+} 
+
+// использование: 
+ul.some-class {    
+	@extend %clear-list;    
+... тут ваши стили ... }
+
+
+%reset {  
+margin: 0;  
+padding: 0; 
+} 
+
+.class1 {
+	@extend %reset;  
+	color: red; 
+} 
+.class2 {  
+	@extend %reset;  
+	color: blue; 
+}
+
+превращается в css
+
+.class1, .class2 { 
+ margin: 0;  
+padding: 0; 
+} 
+.class1 {  
+color: red; 
+} 
+.class2 {  
+color: blue;
+}
+
+_______________________________________________________________ 
+
+Для работы SASS
+
+npm i -g gulp-cli  - устанавливается один раз через консоль на любую папку.
+
+____________________________________________________________
+Системная установка плагинов на Атом осуществляется командой из cmd любой папки.
+
+apm install --packages-file atom-package-list.txt 
+
+В этой папке должен находиться файл "atom-package-list.txt"
+______________________________________________________________________
+
+
+npm install  - устанавливается каждый раз перед работой в САСС
