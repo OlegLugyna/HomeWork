@@ -21,7 +21,7 @@ browser-sync start --server --files **/*.*
 
 Что мы только что сделали:
 
-Установили нормальную консоль на винду :slightly_smiling_face:
+Установили нормальную консоль на винду
 
 Поставили ноду - это окружение для исполнения javascript кода
 
@@ -36,6 +36,13 @@ browser-sync start --server --files **/*.*
 в консоли вводим команду `browser-sync start --server --files **/*.*` - вуаля, ваша верстка у вас в браузере, и обновляется при сохранении исходников) 
 
 https://www.youtube.com/watch?v=mvntgMuUPhU
+
+Другой вариант:
+Установка плагина на Атом для liveReload:
+1. Устанавливаем плагин Atom-live-server
+2. в Меню: packeges - atom-live-server-start server - запускаем
+3. Установленный по умолчанию браузер подтянется автоматически.
+ 
 
 ПЛАГИНЫ ДЛЯ АТОМА
 
