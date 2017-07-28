@@ -1,0 +1,15 @@
+Глобальная установка:
+
+
+1. npm install - глобальная установка npm
+2. npm -g gulp-cli глобальная установка gulp-cli (это  не галп)
+
+Создание проекта. В созданной папке
+1. git init 
+2. npm init (отвечаем на вопросы) создаем файл packege.json
+3. npm install --seve-dev gulp gulp-sass gulp-connect ..... и другие необходимые пакеты....(gulp-connect - пакет для создания локального сервера browser-sync)
+4. .gitignore (создаем через консоль git Bash командой touch .gitignire) В середине прописываем "node_modules"
+5. Создаем папку pubklic (или dist, или build в зависимости от того, что будет прописано gulpfile.js) в ней будут сложены все компилированные файлы.
+6. Вкладываем сборку - файл gulpfile.js
+7. Поднятие готового проекта npm install внутри папки. Загружаются все пакеты, прописанные в packege.json 
+8. Запуск gulp или gulp statrt  в зависимотси от пописанного gulpfile.js 

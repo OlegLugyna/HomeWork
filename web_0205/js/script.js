@@ -16,48 +16,48 @@
 })();*/
 
 
-(function () {
-  'use strict'
+// (function () {
+//   'use strict'
+//
+//   function reverseString () {
+//     var arr = str.split ('');
+//     var newArr = arr.reverse ( );
+//     var newStr = newArr.join ('');
+//     return newStr;
+//   }
+//
+//   var str = prompt('Введите слово или фразу: ', '');
+//   str = str.toLowerCase();
+//   var result = reverseString(str);
+//   alert (result);
+// }) ();
 
-  function reverseString () {
-    var arr = str.split ('');
-    var newArr = arr.reverse ( );
-    var newStr = newArr.join ('');
-    return newStr;
-  }
-
-  var str = prompt('Введите слово или фразу: ', '');
-  str = str.toLowerCase();
-  var result = reverseString(str);
-  alert (result);
-}) ();
 
 
-
-/*(function () {
-  'use strict'
-
-  function reverseString () {
-    var newstr = '';
-    var i = str.length;
-    while (i>0) {
-      newstr =  newstr + str.substring (i-1, i)
-      i--
-     }
-
-    return newstr;
-  }
-
-  var str = prompt('Введите слово или фразу: ', '');
-  str = str.toLowerCase();
-  var result = reverseString(str);
-  alert (result);
-})();*/
+// (function () {
+//   'use strict'
+//
+//   function reverseString () {
+//     var newstr = '';
+//     var i = str.length;
+//     while (i>0) {
+//       newstr =  newstr + str.substring (i-1, i)
+//       i--
+//      }
+//
+//     return newstr;
+//   }
+//
+//   var str = prompt('Введите слово или фразу: ', '');
+//   str = str.toLowerCase();
+//   var result = reverseString(str);
+//   alert (result);
+// })();
 
 //===============================================
 //Задача_2
 
-/*(function () {
+(function () {
   'use strict'
 
   function findLongestworld() {
@@ -75,7 +75,7 @@
   var str = prompt('Введите набор слов для проверки: ', '');
   var result = findLongestworld(str);
   alert (result + ', ' + result.length);
-})();*/
+})();
 
 /*
 "The quick brown fox jumped over the lazy dog"
