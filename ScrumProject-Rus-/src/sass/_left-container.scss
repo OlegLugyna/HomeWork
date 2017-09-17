@@ -1,0 +1,37 @@
+.s-main {
+  display: grid;
+  grid-template-columns: 32.916667% 26.07008%;
+  justify-content: center;
+  grid-column-gap: 8.662263%;
+  width: 89%;
+
+  .s-column {
+
+    .s-column__logo {
+      width: 40.487879%;
+      margin: 0 auto;
+      padding-top: 1.875rem;
+    }
+
+    .s-column__slogan {
+        text-align: center;
+        width: 85.530644%;
+        margin: 0 auto;
+        font-family: $robotoRegular;
+        font-size: 1.5rem;
+        padding-top: 1.6rem;
+        color: $gray-25;
+
+        span {
+          color: $green-dark;
+          font-family: $robotoBold;
+        }
+    }
+
+    .s-column__picture {
+      margin: 0 auto;
+      padding-top: rem(18);
+      max-width: 100%;
+    }
+  }
+}
